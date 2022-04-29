@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:ignore="HardcodedText,ContentDescription,UselessParent,SmallSp">
+    <RelativeLayout
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popular_products_rectangle">
+        <ImageView
+            android:id="@+id/flash_image"
+            android:layout_width="109dp"
+            android:layout_height="109dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/nike_one" />
+        <TextView
+            android:id="@+id/titleFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/flash_image"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_bold"
+            android:maxLines="2"
+            android:text="FS - Nike Air Max 270 React"
+            android:textColor="@color/timeColor" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smallRating"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="$299,43"
+            android:textColor="@color/titleBlue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/latestPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productPrice"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="$534,33"
+            android:textColor="@color/categoryColor"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productPrice"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/latestPrice"
+            android:fontFamily="@font/poppins_bold"
+            android:text="$534,33"
+            android:textColor="@color/redTitle"
+            android:textSize="10sp" />
+
+        <RatingBar
+            android:id="@+id/smallRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleFlash"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:progressTint="#FFC833"
+            android:rating="4" />
+    </RelativeLayout>
+</RelativeLayout>

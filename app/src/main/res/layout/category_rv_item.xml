@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:ignore="HardcodedText,RtlSymmetry,SmallSp,UselessParent,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/categoryImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/ic_cycle_rectangle"
+            android:scaleType="center"
+            android:src="@drawable/ic_man_shirt"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_horizontal"
+            android:text="Man Shirt"
+            android:textColor="@color/categoryColor"
+            android:textSize="10sp" />
+    </LinearLayout>
+</RelativeLayout>

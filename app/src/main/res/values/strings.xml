@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MultipleView</string>
+    <string name="super_sale">Super Flash Sale \n50% Off</string>
+    <string name="category">Category</string>
+</resources>
